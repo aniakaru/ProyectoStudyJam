@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.horoscopochino.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#B39DDB"
+        android:scaleType="centerCrop"
+        android:src="@drawable/anhiomono"
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#673AB7"
+        android:gravity="center_horizontal"
+        android:paddingBottom="16dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:text="2016 AÑO DEL MONO DE FUEGO!"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/editText_anho_nacimiento"
+       android:hint="INGRESA TU AÑO DE NACIMIENTO"
+       android:paddingBottom="25dp"
+       android:paddingLeft="8dp"
+       android:paddingRight="8dp"
+       android:paddingTop="25dp"
+       android:gravity="center_horizontal"
+       android:inputType="number"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#1DE9B6"
+        android:text="CALCULAR SIGNO"
+        android:paddingBottom="16dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="16dp"
+        android:onClick="calculaSigno"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TU SIGNO ES:"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp"
+        android:paddingTop="16dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/nombre_signo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="8dp"
+        android:paddingTop="16dp"
+        android:gravity="center_horizontal"
+        android:textColor="#673AB7"
+        android:textSize="24dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#1DE9B6"
+        android:text="VER PREDICCIONES"
+        android:paddingBottom="16dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="16dp"
+        android:onClick="verSigno"/>
+
+</LinearLayout>
